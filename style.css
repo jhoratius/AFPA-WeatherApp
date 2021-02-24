@@ -1,9 +1,14 @@
-#app {
+/* #app {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
     height:100vh;
+
+    background-position: center;
+    background-size: cover;
   }
   
   .content_box{
@@ -23,4 +28,74 @@
   
   .tooltip{
     display:none;
-  }
+  } */
+
+.Clear {
+    background-image: url(https://www.buzzwebnet.com/wp-content/uploads/2020/06/soleil-8.jpg);
+}
+
+.Clouds {
+    background-image: url(https://www.wallpapertip.com/wmimgs/12-123477_cloudy-sky-background.jpg);
+}
+
+.Rain {
+    background-image: url(https://lucialuz.files.wordpress.com/2014/11/ciel-pluie.jpg?w=600);
+}
+
+.Snow {
+    background-image: url(https://s1.1zoom.me/b5050/30/Winter_Mountains_Roads_467094_3840x2400.jpg);
+}
+
+body{
+    font-family: 'Optima', sans-serif;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    height: 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.buzzwebnet.com/wp-content/uploads/2020/06/soleil-8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    font-size: 35px;
+    color:rgb(141, 141, 141);
+    text-shadow: none;
+    outline: 1px solid;
+    cursor:default;
+}
+
+h1{
+    font-size: 3em;
+}
+
+i.wi{
+    font-size: 5em;
+    line-height: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    cursor:default;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    transition: opacity .3s, top .5s;
+}
+
+h1:hover .tooltip {
+    top: -50px;
+    opacity: 1;
+}

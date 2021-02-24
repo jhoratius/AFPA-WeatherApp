@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css' integrity='sha512-Fdq8QvrEd3TD4heN8gNTOl79sAZR7zsiHIDQbE5eEBxx8pPfb/yJHaBWxhoG7SNcQiBmrrUHlg5TiNX4ovt6Jg==' crossorigin='anonymous'/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,17 +15,26 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
       <section id="app">
+        <div>
+          <p class="title">New Weather</p>
+        </div>
         <div class="content_box">
             <h1>
-                <span id="city">Marseille</span>
+                <span id="city">En attente</span>
                 <span class="tooltip">Tapez une autre ville si vous le souhaitez</span>
             </h1>
-                <img src="https://img.icons8.com/ios/50/000000/rain--v1.png"/>
+                <i class="wi wi-day-rain"></i>
             <h2>
-                <span id="temperature">25</span> °C (<span id="conditions">Ciel dégagé</span>)
+                <span id="temperature">?</span> °C (<span id="conditions">Ciel en attente</span>)
             </h2>
         </div>
     </section>
     <script src="script.js"></script>
+    <!-- <script type="application/javascript">
+      function getIP(json) {
+        document.write("My public IP address is: ", json.ip);
+      }
+    </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
   </body>
 </html>
